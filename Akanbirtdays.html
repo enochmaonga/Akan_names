@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head> </head>
-    <body>
+    <head>        
         <link href="./css.css" rel="stylesheet" type="text/css"/>
         <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
-        <script src="./script.js" defer></script>
-    </body>
+        <script src="./script.js" defer></script> </head>
+    <body>
+        <div class="bg-danger">
     <div class="container">
         <div class="jumbotron text-center">
-    <h1>AKAN BIRTH~DAYS</h1>
-        </div>
-        <p> </p>
+    <h1>AKAN BIRTH~DAYS</h1> <p>Where days of the week make a difference.</p>
     </div>
+    <div class="text-center">
+        <p>This application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
+    </p>
+    </div>
+    <form class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="col-md-4 mb-3">
+        <label for="validationCustom01">Day</label>
+        <input type="text" class="form-control" id="day of the month 0,1,...31" aria-describedby="dateHelp" placeholder="Enter day of the month">
+    </div>
+</div>
+<div class="form-row">
+    <div class="col-md-4 mb-3">
+    <label for="validationCustom01">Month</label>
+    <input type="text" class="form-control" id="month of the year 0,1,...12" aria-describedby="dateHelp" placeholder="Enter month of the year">
+</div>
+<div class="form-row">
+    <div class="col-md-9 mb-3">
+    <label for="validationCustom01">Year</label>
+    <input type="text" class="form-control" id="month of the year 0,1,...12" aria-describedby="dateHelp" placeholder="Enter year of birth">
+</div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-9 mb-3">
+        <label for="validationCustom01">Gender</label>
+        <input type="text" class="form-control" id="month of the year 0,1,...12" aria-describedby="dateHelp" placeholder="Enter your gender">
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+    </body> 
 </html>
