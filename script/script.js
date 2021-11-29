@@ -71,3 +71,6 @@ else if(dayNames == 5) {
 else if(dayNames == 6) {
     alert(`you were born on${dayNames[5]}and your akan name is ${maleNames[5]}!`);
 }
+else if(dayNames == 7) {
+    alert("you were born on" + dayNames[6] + "and your akan name is " + maleNames[6] + '!');
+}
