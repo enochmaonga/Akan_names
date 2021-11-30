@@ -1,3 +1,6 @@
 .foot {
     text-justify: right;
 }
+.btn btn-primary {
+    justify-content: center;
+}

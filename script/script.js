@@ -47,9 +47,21 @@
 
 //  mod - is the modulus function ( % )
 
+var AkanNames = function(Year, Month, Day, Gender) {
+    var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+    var maleNames = ['Kwasi', 'Kwadwo','Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    var Day = new Date(Year, --Month, Day);
+    if(Gender === 'Male') {
+        return Day && maleNames[Day.getDay()];
+    }
+    else {
+        return Day && femaleNames[Day.getDay()];
+        }
+    }
+
 var dayNames = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", 'Friday', 'Saturday'];
-var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-var maleNames = ['Kwasi', 'Kwadwo','Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+
+
 //
 
 var inPutValue = prompt('enter day of the month');
