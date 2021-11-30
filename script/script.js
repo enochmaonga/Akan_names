@@ -61,9 +61,16 @@ var AkanNames = function(Year, Month, Day, Gender) {
 
 var dayNames = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", 'Friday', 'Saturday'];
 
-
+//user logic or front end
 //
+ $(document).ready(function()  {
+     $("form#form").submit(function(event) {
+         event.preventDefault();
+         var Year = parseInt($("#Year").val());
 
+     }
+
+ }
 var inPutValue = prompt('enter day of the month');
 
 if (dayNames == 1) {
