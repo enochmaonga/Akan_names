@@ -1,32 +1,27 @@
-// Business (or back-end) logic:
-function AkanNames(Year, Month, Day, Gender) {
-    var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-    var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
-    var dayNames = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", 'Friday', 'Saturday'];
-    var Day = new Date(Year, --Month, Day);
-    if (Gender === 'Male') {
-        return Day && maleNames[Day.getDay()];
-    }
-    else {
-        return Day && femaleNames[Day.getDay()];
-    }
-}
-
 //user logic or front end
-//
- $(document).ready(function()  {
-     $("form#form").submit(function(event) {
-         event.preventDefault();
-         var Year = parseInt($("#Year").val());
-         var Month = parseInt($("#Month").val());
-         var Day = parseInt($("#Day").val());
-         var Gender = $('input:radio[name:Gender] checked').val();
-         var result = Akan(Year, Month, Day, Gender);
-         alert("Your akan name is " + result);
+ var day = document.getElementById("day").value;
+ var day = parseInt(day);
+ var month = document.getElementById("month").value;
+ var month = parseInt(month);
+ var year = document.getElementById("year").value;
+ var year = parseInt(year);
 
-         document.getElementById("form").reset();
-     });
-    });
+ 
+// Business (or back-end) logic:
+     (Year, Month, Day, Gender) => {
+         var femaleNames = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+         var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+         var dayNames = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", 'Friday', 'Saturday'];
+         var Day = new Date(Year, --Month, Day);
+         if (Gender === 'Male') {
+             return Day && maleNames[Day.getDay()];
+         }
+         else {
+             return Day && femaleNames[Day.getDay()];
+         }
+     }
+
+
 
 //  }
 // var inPutValue = prompt('enter day of the month');
