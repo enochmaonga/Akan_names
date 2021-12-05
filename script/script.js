@@ -50,7 +50,18 @@ if (document.getElementById("gender").checked) {
               else if (Math.round(result) == 6 || Math.round(result) == -6 && gender === 'male') {
                 document.getElementById("final").innerHTML = ("You were born on Wednesday, your Akan Name is " + maleNames[6]);
               }
-          }
+              else if (Math.round(result) == 0 && gender === 'female') {
+                document.getElementById("final").innerHTML = ("You were born on Sunday, your Akan Name is " + femaleNames[0]);
+              }
+              else if (Math.round(result) == 1 || Math.round(result) == -1 && gender === 'female') {
+                document.getElementById("final").innerHTML = ("You were born on Monday, your Akan Name is " + femaleNames[1]);
+              }
+              else if (Math.round(result) == 2 || Math.round(result) == -2 && gender === 'female') {
+                document.getElementById("final").innerHTML = ("You were born on Tuesday, your Akan Name is " + femaleNames[2]);
+              }
+              else if (Math.round(result) == 3 || Math.round(result) == -3 && gender === 'female') {
+                document.getElementById("final").innerHTML = ("You were born on Wednesday, your Akan Name is " + femaleNames[3]);
+              }
         
 // Business (or back-end) logic:
      (Year, Month, Day, Gender) => {
