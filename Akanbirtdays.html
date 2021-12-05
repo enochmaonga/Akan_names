@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>        
+    <head>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <link href="./css.css" rel="stylesheet" type="text/css"/>
         <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="script.js" defer></script> 
@@ -15,7 +16,7 @@
         <p>This application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
     </p>
     </div>
-  
+
     <div class="form-row">
             <div class="col-md-4 mb-3">
             <label for="validationCustom01">Day</label>
@@ -28,36 +29,25 @@
     <div class="col-md-4 mb-3">
     <label for="validationCustom01">Year</label>
     <input type="text" class="form-control" id="year min = 1900 max = 2021" placeholder="yy">
-</div>
-        
-        
+</div> 
         <p><label>Select your Gender: </label><br></p>
         <div class='radio'>
             <label>
-                <input type="radio" name="gender" value="Female" checked><br>
-                Female
+                <input type="radio" name="gender" value="Female" checked>Female<br>
+            </label>
             <label>
-                <input type="radio" name="gender" value="Male" checked><br>
+                <input type="radio" name="gender" value="Male" checked> male<br>
             </label>
             </label>
         </div>
     </div>
-        <!-- <div class="col-md-4 mb-3">
-        <label for="validationCustom01">Akan Name</label>
-        <input type="text" class="form-control" id="day of the month 0,1,...31" aria-describedby="dateHelp" placeholder=" your akan name will appear here">
-    </div>
-    </div>
-    <div>   
-        <button class="btn btn-primary" type="submit">Submit</button>  -->
-        <!-- </form> -->
-    <div class="submit">
-        <a href="#result"><button type="button" name="button" class="btn btn-primary mb - 2"
-            onclick="submition();">submit</button></a>
+      
+    <div class="sbmt">
+          <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2"
+              onclick="submition();">Submit</button></a>
         </div>
         <div id="last">
-        <p id="final></p>"
-        </div>
+          <p id="final"></p>
     </div>
-    <script src="script.js"></script</script>
     </body> 
 </html>
