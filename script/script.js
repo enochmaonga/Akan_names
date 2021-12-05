@@ -31,8 +31,12 @@ if (document.getElementById("gender").checked) {
         else if (Math.round(result) == 0 && gender === 'male') {
             document.getElementById("final").innerHTML = ("You were born on Sunday, your Akan Name is " + maleNames[0]);
           }
-
-      
+          else if (Math.round(result) == 1 && gender === 'male') {
+            document.getElementById("final").innerHTML = ("You were born on Monday, your Akan Name is " + maleNames[1]);
+          }
+          else if (Math.round(result) == 2 && gender === 'male') {
+            document.getElementById("final").innerHTML = ("You were born on Monday, your Akan Name is " + maleNames[2]);
+          }
           }
         
 // Business (or back-end) logic:
