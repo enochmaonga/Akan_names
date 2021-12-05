@@ -1,12 +1,14 @@
 //user logic or front end
+function submition() { 
  var day = document.getElementById("day").value;
  var dd = parseInt(dd);
  var month = document.getElementById("month").value;
  var mm = parseInt(mm);
  var year = document.getElementById("year").value;
- var yy = parseInt(yy);
+ var yy = parseInt(year.toString().slice(2,4));
+ var cc = Math.ceil(year / 100)
+ // this is the formula we are given
 
- //formula
  var result = parseInt(((CC / 4) - 2 * CC - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
  
  var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
@@ -29,6 +31,10 @@ if (document.getElementById("gender").checked) {
         else if (Math.round(result) == 0 && gender === 'male') {
             document.getElementById("final").innerHTML = ("You were born on Sunday, your Akan Name is " + maleNames[0]);
           }
+
+      
+          }
+        
 // Business (or back-end) logic:
      (Year, Month, Day, Gender) => {
          
@@ -67,4 +73,5 @@ else if(dayNames == 6) {
 }
 else if(dayNames == 7) {
     alert("you were born on" + dayNames[6] + "and your akan name is " + maleNames[6] + '!');
+}
 }
