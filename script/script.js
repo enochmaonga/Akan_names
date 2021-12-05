@@ -31,12 +31,25 @@ if (document.getElementById("gender").checked) {
         else if (Math.round(result) == 0 && gender === 'male') {
             document.getElementById("final").innerHTML = ("You were born on Sunday, your Akan Name is " + maleNames[0]);
           }
-          else if (Math.round(result) == 1 && gender === 'male') {
+          else if (Math.round(result) == 1 || Math.round(result) == -1 && gender === 'male') {
             document.getElementById("final").innerHTML = ("You were born on Monday, your Akan Name is " + maleNames[1]);
           }
-          else if (Math.round(result) == 2 && gender === 'male') {
+          else if (Math.round(result) == 2 || Math.round(result) == -2 && gender === 'male') {
             document.getElementById("final").innerHTML = ("You were born on Monday, your Akan Name is " + maleNames[2]);
           }
+          else if (Math.round(result) == 3 || Math.round(result) == -3 && gender === 'male') {
+            document.getElementById("final").innerHTML = ("You were born on Wednesday, your Akan Name is " + maleNames[3]);
+          }
+          else if (Math.round(result) == 4 || Math.round(result) == -4 && gender === 'male') {
+            document.getElementById("final").innerHTML = ("You were born on Wednesday, your Akan Name is " + maleNames[4]);
+          }
+
+        else if (Math.round(result) == 5 || Math.round(result) == -5 && gender === 'male') {
+                document.getElementById("final").innerHTML = ("You were born on Wednesday, your Akan Name is " + maleNames[5]);
+              }
+              else if (Math.round(result) == 6 || Math.round(result) == -6 && gender === 'male') {
+                document.getElementById("final").innerHTML = ("You were born on Wednesday, your Akan Name is " + maleNames[6]);
+              }
           }
         
 // Business (or back-end) logic:
