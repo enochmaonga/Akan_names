@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Akan</title>  
         <link href="./css.css" rel="stylesheet" type="text/css"/>
         <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="script.js" defer></script> 
@@ -19,34 +20,30 @@
 
     <div class="form-row">
             <div class="col-md-4 mb-3">
-            <label for="validationCustom01">Day</label><br>
-            <input type="text" class="form-control" id="day of the month 0,1,...31" placeholder="dd"><br>
+            <label>Day</label><br>
+            <input type="text" id="day" placeholder="dd" required><br>
         </div>
     <div class="col-md-4 mb-3">
-    <label for="validationCustom01">Month</label><br>
-    <input type="text" id="month of the year 0,1,...12" placeholder="mm"><br>
+        <label>Month</label><br>
+    <input type="text" id="month" placeholder="mm" required><br>
 </div>
     <div class="col-md-4 mb-3">
-    <label for="validationCustom01">Year</label><br>
-    <input type="text" class="form-control" id="year min = 1900 max = 2021" placeholder="yy"><br>
+        <label>Year</label><br>
+        <input type="text" id="year" placeholder="yy" required><br>
 </div> 
-        <p><label>Select your Gender: </label><br></p>
-        <div class='radio'>
-            <label>
-                <input type="radio" name="gender" value="Female" checked>Female<br>
-            </label><br>
-            <label>
-                <input type="radio" name="gender" value="Male" checked> male<br>
-            </label>
-            </label>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" id="gender" value="female" checked> Female<br><br>
         </div>
-    </div>   
+
     <div class="sbmt">
         <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2"
             onclick="submition();">Submit</button></a>
       </div>
       <div id="last">
         <p id="final"></p>
+         <!-- </div> -->
+        </div>
     </div>
     </body> 
 </html>
